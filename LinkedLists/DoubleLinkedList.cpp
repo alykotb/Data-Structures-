@@ -1,7 +1,4 @@
 #include <iostream>
-
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
-#include <iostream>
 using namespace std;
 
 template <class T>
@@ -46,6 +43,7 @@ void DoubleLinkedList<T>::deleteNode(T &item)
 	
 	
 }
+
 template <class T>
 void DoubleLinkedList<T>::reverse()
 {
@@ -103,7 +101,7 @@ void DoubleLinkedList<T>::insert(T &item)
 	     previous->right=p;
 	     p->left=previous;
 	     current->right=p;
-	     current->left=p;
+	     current->left=NULL;
 	   }
       else  if (current!=NULL)/*insetrion is in the middle*/
      {
@@ -122,9 +120,9 @@ void DoubleLinkedList<T>::insert(T &item)
     }
 }
 
-int main()
+/*int main()
 {
 	
 	
 	
-}
+}*/
